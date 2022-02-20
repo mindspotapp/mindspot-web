@@ -1,0 +1,58 @@
+:root {
+  --background: #0d1b1e;
+  --text: #f0faf2;
+  --backgroundLight: #242d2f;
+  --pink: #985277;
+}
+
+.content {
+  width: 100%;
+}
+
+.content-header {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.content-header h1 {
+  font-size: 2em;
+}
+
+.content-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-button {
+  width: 100%;
+}
+
+.blank {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#google img {
+  width: 200px;
+}
+
+#apple img {
+  width: 175px;
+}
+
+.content-visit-later {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
