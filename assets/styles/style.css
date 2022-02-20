@@ -152,6 +152,14 @@ body {
 
   .nav ul {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .nav ul li {
+    padding-bottom: 10px;
   }
 
   /* center the content class */
