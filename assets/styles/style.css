@@ -1,0 +1,187 @@
+:root {
+  --background: #0d1b1e;
+  --text: #f0faf2;
+  --backgroundLight: #242d2f;
+  --pink: #985277;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'SF Pro';
+  color: var(--text);
+  text-decoration: none;
+  list-style: none;
+  padding: 1% 2% 0 1%;
+  user-select: none;
+}
+
+body {
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.nav {
+  width: 22%;
+  height: 5%;
+  padding-left: 10%;
+  font-size: 18pt;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav ul li a.download-button {
+  background-color: var(--backgroundLight);
+  padding: 3px 25px 3px 25px;
+  border-radius: 10px;
+}
+
+.nav ul li a.download-button:hover {
+  transition: all 0.25s;
+  background-color: var(--pink);
+}
+
+.nav ul li a.download-button:not(:hover) {
+  transition: all 0.25s;
+  background-color: var(--backgroundLight);
+}
+
+.content-left {
+  position: absolute;
+  left: 7.5%;
+  bottom: 75%;
+}
+
+.content-space {
+  width: 100%;
+}
+
+.content-right {
+  position: absolute;
+  right: 10%;
+}
+
+.content {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content-phone {
+  position: absolute;
+}
+
+.content-phone img {
+  width: 500px;
+}
+
+.content-logo h1 {
+  font-size: 64pt;
+  text-align: center;
+  position: relative;
+  top: -80px;
+}
+
+.content-logo h3 {
+  font-size: 18pt;
+  position: relative;
+  top: -80px;
+  text-align: left;
+}
+
+.content-logo img {
+  width: 400px;
+  height: auto;
+}
+
+.content-footer {
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  align-items: center;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1280px) {
+  body {
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-wrap: normal;
+    overflow-y: scroll;
+  }
+
+  .nav {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .nav ul {
+    width: 100%;
+  }
+
+  /* center the content class */
+  .content {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content-logo img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content-logo h1 {
+    text-align: center;
+    font-size: 48pt;
+    padding-top: 10%;
+    padding-left: 7.5%;
+  }
+
+  .content-logo h3 {
+    text-align: left;
+    padding-left: 7.5%;
+  }
+
+  /* position .content-left underneath .content-right */
+
+  .content-left {
+    position: absolute;
+    top: 100%;
+  }
+
+  .content-phone {
+    /* center .content-phone div below the .content div */
+    position: absolute;
+    top: 100%;
+    left: -100%;
+  }
+
+  .content-phone img {
+    width: 90vw;
+  }
+
+  .content-footer {
+    position: absolute;
+    top: 275%;
+  }
+}
