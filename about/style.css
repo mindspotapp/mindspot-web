@@ -37,17 +37,6 @@
   user-select: none;
 }
 
-::-webkit-scrollbar {
-  background-color: var(--background);
-  width: 2px;
-  height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--backgroundLight);
-  border-radius: 10px;
-}
-
 body {
   background-color: var(--background);
 }

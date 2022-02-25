@@ -17,6 +17,17 @@
   --pink: #985277;
 }
 
+::-webkit-scrollbar {
+  background-color: var(--background);
+  width: 2px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--backgroundLight);
+  border-radius: 10px;
+}
+
 @supports (-webkit-touch-callout: none) {
   * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
