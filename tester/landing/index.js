@@ -1,3 +1,4 @@
+const form = document.querySelector('.form');
 const input = document.getElementById('code');
 const error = document.querySelector('.error');
 const countdown = document.querySelector('.timeRemaining');
@@ -13,6 +14,19 @@ const code = params.get('code');
 
 if (code) {
   input.value = code;
+}
+
+const agent = navigator.userAgent || navigator.vendor || window.opera;
+console.log(agent);
+
+if (/ipad|iphone|ipod|mac/gim.test(agent) || /android/gim.test(agent)) {
+  form.style.display = 'none';
+  error.innerText = 'Please visit this page on a desktop device.';
+  error.style.display = 'block';
+
+  setTimeout(() => {
+    location = '/about';
+  }, 5000);
 }
 
 input.addEventListener('input', e => {

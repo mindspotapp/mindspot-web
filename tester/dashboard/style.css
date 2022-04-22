@@ -107,3 +107,10 @@ a {
     cursor: pointer;
     transition: all 0.2s;
 }
+
+.error {
+    text-align: center;
+    font-weight: normal;
+    color: var(--error);
+    display: none;
+}
