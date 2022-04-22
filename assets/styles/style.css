@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: 'SF Pro';
-  src: url('./assets/fonts/SFPro-Regular.eot');
-  src: url('./assets/fonts/SFPro-Regular.eot?#iefix')
+  src: url('/assets/fonts/SFPro-Regular.eot');
+  src: url('/assets/fonts/SFPro-Regular.eot?#iefix')
       format('embedded-opentype'),
-    url('./assets/fonts/SFPro-Regular.woff2') format('woff2'),
-    url('./assets/fonts/SFPro-Regular.woff') format('woff'),
-    url('./assets/fonts/SFPro-Regular.ttf') format('truetype'),
-    url('./assets/fonts/SFPro-Regular.svg#SFPro-Regular') format('svg');
+    url('/assets/fonts/SFPro-Regular.woff2') format('woff2'),
+    url('/assets/fonts/SFPro-Regular.woff') format('woff'),
+    url('/assets/fonts/SFPro-Regular.ttf') format('truetype'),
+    url('/assets/fonts/SFPro-Regular.svg#SFPro-Regular') format('svg');
 }
 
 :root {
   --background: #0d1b1e;
   --text: #f0faf2;
-  --backgroundLight: #242d2f;
+  --backgroundLight: #222E30;
   --pink: #985277;
 }
 
@@ -168,15 +168,9 @@ body {
     padding: 0;
   }
 
-  .content-logo img {
-    width: 300px;
-    height: 300px;
-  }
-
   .content-logo h1 {
     text-align: center;
     font-size: 48pt;
-    padding-top: 10%;
     padding-left: 7.5%;
   }
 
