@@ -1,0 +1,89 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/assets/fonts/SFPro-Regular.eot');
+    src: url('/assets/fonts/SFPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/SFPro-Regular.woff2') format('woff2'),
+        url('/assets/fonts/SFPro-Regular.woff') format('woff'),
+        url('/assets/fonts/SFPro-Regular.ttf') format('truetype'),
+        url('/assets/fonts/SFPro-Regular.svg#SFPro-Regular') format('svg');
+}
+
+:root {
+    --background: #0d1b1e;
+    --text: #f0faf2;
+    --backgroundLight: #222E30;
+    --pink: #985277;
+    --error: #AB4A4A;
+    --success: #56C58E;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--background);
+    width: 2px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--backgroundLight);
+    border-radius: 10px;
+}
+
+@supports (-webkit-touch-callout: none) {
+    * {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+            Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    color: var(--text);
+    text-decoration: none;
+    list-style: none;
+    padding: 1% 2% 0 1%;
+}
+
+body {
+    background-color: var(--background);
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.header img {
+    width: 30%;
+}
+
+.content {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    margin-bottom: auto;
+}
+
+.content h1 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 50px;
+    border-radius: 15px;
+    border: none;
+    width: 75%;
+    font-size: 3em;
+    font-weight: normal;
+    color: #f0faf2;
+    background: #222e30;
+}
