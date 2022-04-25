@@ -1,104 +1,165 @@
 @charset 'UTF-8';
 
 @font-face {
-    font-family: 'SF Pro';
-    src: url('/assets/fonts/SFPro-Regular.eot');
-    src: url('/assets/fonts/SFPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/SFPro-Regular.woff2') format('woff2'),
-        url('/assets/fonts/SFPro-Regular.woff') format('woff'),
-        url('/assets/fonts/SFPro-Regular.ttf') format('truetype'),
-        url('/assets/fonts/SFPro-Regular.svg#SFPro-Regular') format('svg');
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SFPro-Regular.eot');
+  src: url('/assets/fonts/SFPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/SFPro-Regular.woff2') format('woff2'),
+    url('/assets/fonts/SFPro-Regular.woff') format('woff'),
+    url('/assets/fonts/SFPro-Regular.ttf') format('truetype'),
+    url('/assets/fonts/SFPro-Regular.svg#SFPro-Regular') format('svg');
 }
 
 :root {
-    --background: #0d1b1e;
-    --text: #f0faf2;
-    --backgroundLight: #222E30;
-    --pink: #985277;
-    --error: #AB4A4A;
-    --success: #56C58E;
+  --background: #0d1b1e;
+  --text: #f0faf2;
+  --backgroundLight: #222e30;
+  --pink: #985277;
+  --error: #ab4a4a;
+  --success: #56c58e;
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--background);
-    width: 2px;
-    height: 20px;
+  background-color: var(--background);
+  width: 2px;
+  height: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--backgroundLight);
-    border-radius: 10px;
+  background-color: var(--backgroundLight);
+  border-radius: 10px;
 }
 
 @supports (-webkit-touch-callout: none) {
-    * {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-            Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-    color: var(--text);
-    text-decoration: none;
-    list-style: none;
-    padding: 1% 2% 0 1%;
+  padding: 0;
+  margin: 0;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  color: var(--text);
+  text-decoration: none;
+  list-style: none;
+  padding: 1% 2% 0 1%;
 }
 
 body {
-    background-color: var(--background);
-    text-align: center;
+  background-color: var(--background);
+  text-align: center;
 }
 
 .header {
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5em;
-    text-align: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5em;
+  text-align: center;
 }
 
 .main {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section {
-    width: 20%;
-    background-color: var(--backgroundLight);
-    height: 30vh;
-    border-radius: 15px;
-    text-align: left;
-    margin: 1em;
+  width: 20%;
+  background-color: var(--backgroundLight);
+  height: 30vh;
+  border-radius: 15px;
+  text-align: left;
+  margin: 1em;
 }
 
 a {
-    color: var(--pink)
+  color: var(--pink);
 }
 
 .colors {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.color {
+  width: auto;
+  border-radius: 2px;
+  margin: 1em;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* make the existing css look good on smaller screens */
+@media screen and (max-width: 1500px) {
+  .header {
+    width: 80%;
+  }
+
+  .header img {
+    width: 30%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .section {
+    width: 30%;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    width: 80%;
+  }
+  .colors {
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.color {
-    width: auto;
-    border-radius: 2px;
-    margin: 1em;
-    padding: 5px;
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+
+  .header img {
+    width: 30%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .section {
+    width: 80%;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 5%;
+    font-size: 1.2em;
+  }
 }
-

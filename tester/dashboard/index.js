@@ -11,15 +11,15 @@ unregisterButton.onclick = () => {
 const agent = navigator.userAgent || navigator.vendor || window.opera;
 console.log(agent);
 
-if (/ipad|iphone|ipod|mac/gim.test(agent) || /android/gim.test(agent)) {
-  mainSection.style.display = 'none';
-  error.innerText = 'Please visit this page on a desktop device.';
-  error.style.display = 'block';
+// if (/ipad|iphone|ipod|mac/gim.test(agent) || /android/gim.test(agent)) {
+//   mainSection.style.display = 'none';
+//   error.innerText = 'Please visit this page on a desktop device.';
+//   error.style.display = 'block';
 
-  setTimeout(() => {
-    location = '/about';
-  }, 5000);
-}
+//   setTimeout(() => {
+//     location = '/about';
+//   }, 5000);
+// }
 
 const params = new URLSearchParams(location.search);
 const code = params.get('r');
