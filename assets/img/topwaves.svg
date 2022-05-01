@@ -1,0 +1,9 @@
+<svg width="1920" height="487" viewBox="0 0 1920 487" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="top waves" d="M517.17 249.495C610.502 201.797 700.873 116.304 793.947 64.4514C926.526 -9.45995 1064.59 -13.9247 1196.96 62.7274C1325.6 137.037 1458.98 318.278 1586.09 410.358C1698.81 492.05 1821.88 525.69 1931 423.62V0H0V120.902C164.884 292.658 343.739 337.13 517.17 249.495Z" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_4_148" transform="translate(0 -0.659225) scale(0.000720981 0.00285875)"/>
+</pattern>
+<image id="image0_4_148" data-name="Blobs!.png" width="1387" height="811" xlink:href="./background.png"/>
+</defs>
+</svg>

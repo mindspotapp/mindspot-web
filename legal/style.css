@@ -1,3 +1,15 @@
+:root {
+  --background: #0d1b1e;
+  --text: #f0faf2;
+  --backgroundLight: #222e30;
+  --pink: #985277;
+  --green: #56c58e;
+}
+
+body {
+  background-color: var(--background);
+}
+
 .content-definitions {
   width: 50%;
   margin-right: auto;
